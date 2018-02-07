@@ -1,0 +1,6 @@
+#!/bin/sh
+
+BUILD_DIR=build
+
+OEROOT=$(pwd)/sources/poky
+. $OEROOT/oe-init-build-env $(pwd)/$BUILD_DIR > /dev/null
