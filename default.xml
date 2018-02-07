@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="2"/>
+
+  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
+  <remote fetch="https://github.com/openembedded" name="oe"/>
+  <remote fetch="file:///workdir" name="buildsystem"/>
+
+  <project remote="yocto" name="poky.git" revision="tags/yocto-2.4.1" path="sources/poky"/>
+  <project remote="oe" name="meta-openembedded.git" revision="a65c1acb1822966c3553de9fc98d8bb6be705c4e" path="sources/meta-openembedded"/>
+  <project remote="buildsystem" revision="master" name="buildsystem.git" path="sources/buildsystem"/>
+
+</manifest>
