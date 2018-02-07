@@ -5,4 +5,4 @@ CWD=$(pwd)
 TEMPLATECONF=$CWD/sources/buildsystem/templates
 OEROOT=$CWD/sources/poky
 
-. $OEROOT/oe-init-build-env $CWD/$BUILD_DIR > /dev/null
+. $OEROOT/oe-init-build-env $CWD/$BUILD_DIR
