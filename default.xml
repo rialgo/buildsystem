@@ -6,7 +6,7 @@
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
   <remote fetch="https://github.com/agherzan" name="raspberrypi"/>
-  <remote fetch="git@git.rialgo.de:build" name="buildsystem"/>
+  <remote fetch="https://git.rialgo.de/build" name="buildsystem"/>
 
   <!-- yocto revision="rocko" -->
   <project remote="yocto" name="poky.git" revision="21ba45aa77e4d43a93cd96d859707a4758e8b64b" path="sources/poky"/>
