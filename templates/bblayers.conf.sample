@@ -17,4 +17,7 @@ BBLAYERS = " \
   ${BSPDIR}/sources/meta-openembedded/meta-python \
   \
   ${BSPDIR}/sources/meta-raspberrypi \
+  \
+  ${BSPDIR}/sources/buildsystem/meta-app \
+  ${BSPDIR}/sources/buildsystem/meta-rpic \
 "
