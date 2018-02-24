@@ -15,10 +15,13 @@ cd docker
 ./manage-build-container.sh run
 ```
 
-Start a yocto build (inside the running Docker container):
+Start a yocto build (inside the running Docker container or on a host which has all required build host packages installed:
+https://www.yoctoproject.org/docs/current/yocto-project-qs/yocto-project-qs.html#packages):
 ```
 repo init -u https://github.com/rialgo/buildsystem.git
 repo sync
 . setup-environment
-bitbake rpi-basic-image
+bitbake rpi-image
 ```
+
+The final images are stored in  _<build-dir>/tmp/deploy/images/raspberrypi3_.
