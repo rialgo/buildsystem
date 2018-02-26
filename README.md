@@ -11,6 +11,8 @@ Build the Docker image:
 ```
 cd docker
 ./manage-build-container.sh build
+# Create a volume
+docker volume create buildvol
 # Run the Docker container
 ./manage-build-container.sh run
 ```
