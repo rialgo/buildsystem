@@ -23,3 +23,11 @@ DEPENDS = "boost \
   "
 
 inherit cmake
+inherit systemd
+
+SYSTEMD_SERVICE_${PN} = "motorControl.service"
+
+do_install_append() {
+  install -d ${D}${systemd_unitdir}/system
+  install -m 0644 ${S}/systemd/motorControl.service ${D}${systemd_unitdir}/system
+}

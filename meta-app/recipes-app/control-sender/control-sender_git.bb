@@ -12,6 +12,7 @@ S = "${WORKDIR}/git"
 
 DEPENDS = "boost \
   snc \
+  dropbear \
   "
 
 inherit cmake
