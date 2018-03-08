@@ -29,6 +29,7 @@ RUN apt-get update && \
         curl \
         nano \
         fluxbox \
+        tree \
         tightvncserver && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \

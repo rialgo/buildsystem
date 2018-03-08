@@ -2,11 +2,14 @@
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 
-SRC_URI += "file://wpa_supplicant.conf"
+SRC_URI += "file://wpa_supplicant.conf \
+  file://wpa_supplicant.service \
+  "
 
 do_install_append() {
 	install -d ${D}${sysconfdir}/wpa_supplicant
 	install -m 0644 ${WORKDIR}/wpa_supplicant.conf ${D}${sysconfdir}/wpa_supplicant/wpa_supplicant-wlan0.conf
+	install -m 644 ${WORKDIR}/wpa_supplicant.service ${D}/${systemd_unitdir}/system
 
 	# link instance-specific units---this is equivalent to calling
         #   $ systemctl enable wpa_supplicant@wlan0
